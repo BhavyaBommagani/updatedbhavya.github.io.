@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Rating Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Movie Rating Website</h1>
+    <p>Discover and rate your favorite movies</p>
+  </header>
+
+  <!-- Movie List Section -->
+  <section id="movie-list">
+    <!-- Movie Cards with Images, Text Descriptions, Buttons, etc. -->
+    <div class="movie-card">
+      <img src="movie1.jpg" alt="Movie 1">
+      <h2>Movie Title 1</h2>
+      <p>Description of the movie.</p>
+      <button onclick="playTrailer('trailer1.mp4')">Play Trailer</button>
+      <div class="rating">Rating: 4.5/5</div>
+    </div>
+    <!-- Repeat similar structure for more movie cards -->
+  </section>
+
+  <!-- Search and Filter Section -->
+  <section id="search-filter">
+    <label for="search">Search by title</label>
+    <input type="text" id="search" placeholder="Search by title">
+    <label for="sort">Sort by</label>
+    <select id="sort">
+      <option value="popularity">Popularity</option>
+      <option value="rating">Rating</option>
+      <!-- Add more sorting options as needed -->
+    </select>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Movie Rating Website. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for functionality -->
+  <script src="script.js"></script>
+
+</body>
+</html>
